@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6a0ea0; /* Morado oscuro*/
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#banner {
+    background-image: url('https://i.gifer.com/7GiD.gif'); /* Ruta de la imagen del banner */
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: rgb(255, 255, 255);
+}
+
+#contenido-inicio div {
+    text-align: center;
+    
+    padding: 20px;
+}
+#contenido-servicio div{
+        text-align: center;
+    }
+   
+
+footer {
+    background-color: #6a0ea0; /* Morado oscuro */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(50%);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #64bb00; /* Morado oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideInFromBottom 0.5s ease-in-out; /* Aplica la animación */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #64bb00; /* Morado oscuro*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 0.5s ease-in-out; /* Aplica la animación */
+}
+
+/* Estilos para los botones de la herramienta de conversión */
+#contenido-servicios button {
+    background-color: #64bb00; /* Color de fondo verde */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón cuando se coloca el cursor sobre él */
+#contenido-servicios button:hover {
+    background-color: #c0baba; /* Cambio de color de fondo al pasar el cursor */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLITECNICO CHANGE - Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarInicio()">Inicio</a></li>
+                <li><a href="#servicios" onclick="mostrarServicios()">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <h1>Bienvenido a POLITECNICO CHANGE</h1>
+        <p></p>
+    </section>
+    <section id="contenido-inicio">
+        <div>
+            <p>¡Bienvenido a CHANGE POLITECNICO!</p>
+            <p>Somos tu plataforma de conversión de monedas fácil de usar y confiable, diseñada para estudiantes, profesores y personal del Politécnico. Con CHANGE POLITECNICO, puedes convertir cualquier divisa al instante y planificar tus gastos con total claridad.</p>
+            <p>Nuestro diseño limpio y amigable hace que sea rápido y sencillo realizar conversiones de moneda. Simplemente ingresa el monto y selecciona las monedas que deseas convertir. ¡Y listo! Obtendrás el resultado al instante, sin complicaciones.</p>
+            <p>Además, mantenemos nuestras tasas de cambio siempre actualizadas para brindarte la información más precisa en todo momento. Ya sea que estés planeando un viaje al extranjero, comprando productos en línea o simplemente necesites calcular costos, CHANGE POLITECNICO está aquí para ayudarte.</p>
+            <p>¡Únete a nuestra comunidad de usuarios satisfechos y haz que tus conversiones de moneda sean una experiencia fácil y educativa con CHANGE POLITECNICO!</p>
+        </div>
+    </section>
+    <section id="contenido-servicios" style="display:none;">
+        <div>
+            <label for="monto">Monto a convertir:</label>
+            <input type="number" id="monto" />
+            <button onclick="convertirADolares()">Convertir a Dólares</button>
+            <button onclick="convertirAEuros()">Convertir a Euros</button>
+            <button onclick="convertirACOP()">Convertir a Pesos Colombianos</button>
+            <div id="resultado"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 POLITECNICO CHANGE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
